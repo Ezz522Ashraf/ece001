@@ -1,0 +1,175 @@
+<doctybe html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cryptography in Everyday Life</title>
+        <meta name="discription" content="Cryptography in Everyday Life" />
+        <link rel="stylesheet" href="cssfiles/bootstrap.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="cssfiles/pro.css">
+        <script></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12 fixed-top">
+                    <a class="navbar-brand" href="index.html"
+                        style="font-family:Times New Romans;font-style:italic;color:#41f485;">Cryptography</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Modern_cryptography.html">Modern Cryptography <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Web_Page_Encryption.html">Web Page Encryption <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Cryptography_in_Everyday_Life.html">Cryptography in Everyday
+                                    Life <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="wheres col-12">
+                    <h3
+                        style="text-align: center;font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Authentication/Digital Signatures</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="font-size: 16px;">
+                        Authentication and digital signatures are a very important application of public-key
+                        cryptography. For example, if you receive a message from me that I have encrypted with my
+                        private key and you are able to decrypt it using my public key, you should feel reasonably
+                        certain that the message did in fact come from me. If I think it necessary to keep the message
+                        secret, I may encrypt the message with my private key and then with your public key, that way
+                        only you can read the message, and you will know that the message came from me. The only
+                        requirement is that public keys are associated with their users by a trusted manner, for example
+                        a trusted directory. To address this weakness, the standards community has invented an object
+                        called a certificate. A certificate contains, the certificate issuer's name, the name of the
+                        subject for whom the certificate is being issued, the public key of the subject, and some time
+                        stamps. You know the public key is good, because the certificate issuer has a certificate
+                        too.<br><br>
+
+                        Pretty Good Privacy (PGP) is a software package originally developed by Phil Zimmerman that
+                        provides encryption and authentication for e-mail and file storage applications. Zimmerman
+                        developed his freeware program using existing encryption techniques, and made it available on
+                        multiple platforms. It provides message encryption, digital signatures, data compression, and
+                        e-mail compatibility. PGP uses RSA for key transport and IDEA for bulk encryption of messages.
+                        Zimmerman ran into legal problems with RSA over his use of the RSA algorithm in his program. PGP
+                        is now available in a couple of legal forms: MIT PGP versions 2.6 and later are legal freeware
+                        for non-commercial use, and Viacrypt PGP versions 2.7 and later are legal commercial versions of
+                        the same software.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="justify-content: center;">
+                <h3
+                    style="text-align: center;font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Electronic Money</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="font-size: 16px;">
+                        The definition of electronic money (also called electronic cash or digital cash) is a term that
+                        is still evolving. It includes transactions carried out electronically with a net transfer of
+                        funds from one party to another, which may be either debit or credit and can be either anonymous
+                        or identified. There are both hardware and software implementations.<br>
+
+                        Anonymous applications do not reveal the identity of the customer and are based on blind
+                        signature schemes. (Digicash's Ecash) Identified spending schemes reveal the identity of the
+                        customer and are based on more general forms of signature schemes. Anonymous schemes are the
+                        electronic analog of cash, while identified schemes are the electronic analog of a debit or
+                        credit card. There are also some hybrid approaches where payments can be anonymous with respect
+                        to the merchant but not the bank (CyberCash credit card transactions) ; or anonymous to
+                        everyone, but traceable (a sequence of purchases can be related, but not linked directly to the
+                        spender's identity).<br>
+
+                        Encryption is used in electronic money schemes to protect conventional transaction data like
+                        account numbers and transaction amounts, digital signatures can replace handwritten signatures
+                        or a credit-card authorizations, and public-key encryption can provide confidentiality. There
+                        are several systems that cover this range of applications, from transactions mimicking
+                        conventional paper transactions with values of several dollars and up, to various micropayment
+                        schemes that batch extremely low cost transactions into amounts that will bear the overhead of
+                        encryption and clearing the bank. <br>
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="justify-content: center;">
+                <h3
+                    style="text-align: center;font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Secure Network Communications</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="font-size: 16px;">
+                        Netscape has developed a public-key protocol called Secure Socket Layer (SSL) for providing data
+                        security layered between TCP/IP (the foundation of Internet-based communications) and
+                        application
+                        protocols (such as HTTP, Telnet, NNTP, or FTP). SSL supports data encryption, server
+                        authentication,
+                        message integrity, and client authentication for TCP/IP connections.<br>
+
+                        The SSL Handshake Protocol authenticates each end of the connection (server and client), with
+                        the second or client authentication being optional. In phase 1, the client requests the server's
+                        certificate and its cipher preferences. When the client receives this information, it generates
+                        a master key and encrypts it with the server's public key, then sends the encrypted master key to
+                        the server. The server decrypts the master key with its private key, then authenticates itself to
+                        the client by returning a message encrypted with the master key. Following data is encrypted with
+                        keys derived from the master key. Phase 2, client authentication, is optional. The server challenges
+                        the client, and the client responds by returning the client's digital signature on the challenge
+                        with its public-key certificate.<br>
+
+                        SSL uses the RSA public-key cryptosystem for the authentication steps. After the exchange of
+                        keys, a number of different cryptosystems are used, including RC2, RC4, IDEA, DES and triple-DES. <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/my_script.js"></script>
+    </body>
+
+    </html>
